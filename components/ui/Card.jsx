@@ -43,7 +43,7 @@ export default function Card({ project }) {
                 <h3 className="font-semibold">{project?.users?.name}</h3>
               </div>
               <div className="flex items-center gap-2">
-                {project?.github && (
+                {project?.sourceCode && (
                   <Link href={project?.sourceCode}>
                     <Github size={20} />
                   </Link>
