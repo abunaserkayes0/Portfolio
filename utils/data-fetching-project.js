@@ -1,6 +1,6 @@
 export const getProjectsData = async () => {
     try {
-        const projects = await fetch(`https://portfolio-jcqrah8rt-abunaserkayes0s-projects.vercel.app/api/projects`)
+        const projects = await fetch(`https://portfolio-rho-seven-52.vercel.app/api/projects`)
         const data = await projects.json();
         return data;
     } catch (error) {
@@ -11,7 +11,7 @@ export const getProjectsData = async () => {
 
 export const getProjectById = async (projectId) => {
     try {
-        const project = await fetch(`https://portfolio-jcqrah8rt-abunaserkayes0s-projects.vercel.app/api/projects/${projectId}`)
+        const project = await fetch(`https://portfolio-rho-seven-52.vercel.app/api/projects/${projectId}`)
         const data = await project.json();
         return data;
     } catch (error) {
