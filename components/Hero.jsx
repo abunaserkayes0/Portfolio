@@ -14,17 +14,17 @@ import Button from "./ui/Button";
 export default function Hero() {
   return (
     <>
-      <section className="flex items-center justify-stretch gap-20">
-        <div className="">
+      <section className="flex flex-col md:flex-row md:justify-stretch md:gap-10 items-center justify-stretch">
+        <div className="flex w-full mb-4 md:justify-start md:w-auto md:mb-0 items-center ">
           <Image
-            className="rounded-full border-8 border-blue-100 "
+            className="rounded-full border-8 border-blue-100"
             src="/assets/profile.png"
             alt="profile"
             width="200"
             height="200"
           />
         </div>
-        <div>
+        <div className="w-full mb-4 md:justify-start md:w-auto md:mb-0 items-center justify-center">
           <h1 className="text-2xl font-bold">Abu Naser Kayes</h1>
           <div className="flex font-normal items-center gap-3 my-2">
             <span className="text-gray-600">@abunaserkayes</span>

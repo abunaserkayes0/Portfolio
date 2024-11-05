@@ -1,16 +1,16 @@
 "use client";
-import Link from "next/link";
 import { useState } from "react";
+import Link from "next/link";
 import Button from "./ui/Button";
 
 export default function NabBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="text-black p-2">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav id="navbar" className="text-black p-2 sticky">
+      <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="text-lg font-bold">
+        <div className="font-bold">
           Abu<span className="text-blue-600">Naser</span>Kayes
         </div>
         {/* Hamburger Icon */}

@@ -1,4 +1,4 @@
-import { getProjectsData } from "@/utils/data-fetching-project";
+import { getProjectsData } from "@/libs/data-fetching-project";
 import Card from "./ui/Card";
 
 export default async function Projects() {

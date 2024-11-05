@@ -23,8 +23,8 @@ const buttonStyles = cva("button", {
       wide: "px-5 py-1.5",
     },
     padding: {
-      lg: "px-4 py-2",
       sm: "px-3",
+      md: "px-4",
       lg: "px-8",
     },
   },

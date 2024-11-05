@@ -3,7 +3,7 @@ import {
   getStacksByBrowser,
   getStacksByFronted,
   getStacksByTools,
-} from "@/utils/data-fetching-stack";
+} from "@/libs/data-fetching-stack";
 import Image from "next/image";
 
 export default async function Stack() {
@@ -15,7 +15,7 @@ export default async function Stack() {
   return (
     <>
       <h1 className="text-2xl font-bold my-3">Tech Stacks</h1>
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid md:grid-cols-4">
         <section>
           <h2 className="text-xl font-thin my-3">Fronted Skills</h2>
           {frontEnds?.map((frontEnd) => {

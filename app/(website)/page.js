@@ -5,7 +5,7 @@ import Projects from "@/components/Projects";
 import Stack from "@/components/Stack";
 export default function Home() {
   return (
-    <div className="container mx-20">
+    <div className="container mx-auto p-10">
       <Hero />
       <About />
       <hr />

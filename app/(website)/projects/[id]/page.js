@@ -1,5 +1,5 @@
 import Button from "@/components/ui/Button";
-import { getProjectById } from "@/utils/data-fetching-project";
+import { getProjectById } from "@/libs/data-fetching-project";
 import { FastForward, Github, Globe } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";

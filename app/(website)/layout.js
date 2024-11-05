@@ -1,5 +1,6 @@
 import "../globals.css";
-import NavBar from '@/components/NavBar';
+import Footer from "@/components/Footer";
+import NavBar from "@/components/NavBar";
 export const metadata = {
   title: "Portfolio",
   description: "Portfolio description for portfolio page",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
       <body>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
