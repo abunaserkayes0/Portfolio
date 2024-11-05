@@ -40,17 +40,19 @@ export default function Card({ project }) {
                   height={15}
                   alt="UserAvatar"
                 />
-                <h3 className="font-semibold">{project?.users?.name}</h3>
+                <h3 className="font-semibold text-white">
+                  {project?.users?.name}
+                </h3>
               </div>
               <div className="flex items-center gap-2">
                 {project?.sourceCode && (
                   <Link href={project?.sourceCode}>
-                    <Github size={20} />
+                    <Github color="#ffffff" size={20} />
                   </Link>
                 )}
                 {project?.liveSite && (
                   <Link href={project?.liveSite}>
-                    <Globe size={20} />
+                    <Globe color="#ffffff" size={20} />
                   </Link>
                 )}
               </div>

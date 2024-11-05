@@ -10,9 +10,9 @@ export default function NabBar() {
     <nav id="navbar" className="text-black p-2 sticky">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="font-bold">
+        <Link href="/" className="font-bold">
           Abu<span className="text-blue-600">Naser</span>Kayes
-        </div>
+        </Link>
         {/* Hamburger Icon */}
         <div className="md:hidden">
           <button
