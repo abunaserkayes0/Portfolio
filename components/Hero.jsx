@@ -37,7 +37,7 @@ export default function Hero() {
               <CodeXml size={15} />
               Front End Developer
             </span>
-            <Link href="abunaserkayes.pdf" target="_blank">
+            <Link href="/assets/abunaserkayes.pdf" target="_blank">
               <span className="flex items-center text-gray-600">
                 <FileText size={15} /> <p>View Resume </p>
               </span>
