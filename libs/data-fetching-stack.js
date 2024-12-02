@@ -1,6 +1,6 @@
 export const getStacksData = async () => {
     try {
-        const data = await fetch("https://portfolio-rho-seven-52.vercel.app/api/stacks");
+        const data = await fetch("https://abunaserkayes.vercel.app/api/stacks");
         const stacks = await data.json();
         return stacks;
     } catch (error) {
