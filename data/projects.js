@@ -20,7 +20,27 @@ const projects = [
     ],
   },
   {
-    id: "9oO5tt5j71wLJRnQc9kuTpZdgGT72234",
+    id: "9oO5tt5j71wLJRnQc9kuTpZdgFT72235",
+    title: "Solution Daily needs",
+    description:
+      "A web Application build in MERN stack for managing daily needs items.In this application, you can order daily needs items and see the order list.",
+    users: {
+      name: "Abu Naser Kayes",
+      photo: "/assets/profile.png",
+    },
+    liveSite: "https://unique-solution-client.vercel.app/",
+    sourceCode: "https://github.com/abunaserkayes0/unique-solution-client",
+    siteImage: "/projects/unique-solution.jpg",
+    technology: ["React", "Express Js", "MongoDB", "Tailwind CSS", "Daisy Ui"],
+    keyFeatures: [
+      "Implement React Js for optimized web performance.Integrated with MongoDB as the database.",
+      "Implement dynamic rendering of service and details.Incorporates best practices for data protection.",
+      "Designed for future scalability and the addition of new features.Includes user account management for booking history and preferences.Comprehensive reservation and availability checking functionality.",
+      "Additional feature of this application implement react-toastify and using animaition.css",
+    ],
+  },
+  {
+    id: "9oO5tt5j71wLJRnQc9kuTpZdgGT7hu76",
     title: "FoodVillage Restaurant",
     description:
       "A web Application build in MERN stack for managing food items.In this application, you can order food items and see the order list.",
@@ -46,25 +66,6 @@ const projects = [
       "Uses Context-API and handles authentication.",
     ],
   },
-  {
-    id: "9oO5tt5j71wLJRnQc9kuTpZdgGT72235",
-    title: "Solution Daily needs",
-    description:
-      "A web Application build in MERN stack for managing daily needs items.In this application, you can order daily needs items and see the order list.",
-    users: {
-      name: "Abu Naser Kayes",
-      photo: "/assets/profile.png",
-    },
-    liveSite: "https://unique-solution-client.vercel.app/",
-    siteImage: "/projects/unique-solution.jpg",
-    technology: ["React", "Express Js", "MongoDB", "Tailwind CSS", "Daisy Ui"],
-    keyFeatures: [
-      "Implement React Js for optimized web performance.Integrated with MongoDB as the database.",
-      "Implement dynamic rendering of service and details.Incorporates best practices for data protection.",
-      "Designed for future scalability and the addition of new features.Includes user account management for booking history and preferences.Comprehensive reservation and availability checking functionality.",
-      "Additional feature of this application implement react-toastify and using animaition.css",
-    ],
-  },
 ];
 
 export const getStaticProjectsData = async () => {
@@ -73,7 +74,9 @@ export const getStaticProjectsData = async () => {
 
 export const getStaticProjectById = async (id) => {
   if (id) {
-    const project = projects.find((project) => project.id === String(id));
+    const project = projects.find(
+      (project) => String(project.id) === String(id)
+    );
     return project;
   } else {
     return null;
