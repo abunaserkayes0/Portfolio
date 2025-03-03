@@ -63,6 +63,7 @@ const projects = [
       "Built with React Js for optimized web performance.Utilizes Firebase for secure user authentication.Integrated with MongoDB as the database.",
       "Implement backend with express js and MongoDB for storing data.",
       "Following Atomic structured for using code pattern and Slider use Swiper.js.",
+      "Additional feature of this application implement react-toastify and using animaition.css.",  
       "Uses Context-API and handles authentication.",
     ],
   },
