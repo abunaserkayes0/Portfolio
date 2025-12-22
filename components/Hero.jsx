@@ -4,8 +4,7 @@ import {
   FileText,
   Github,
   Linkedin,
-  MapPin,
-  MonitorSmartphone,
+  MapPin
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,7 +34,7 @@ export default function Hero() {
           <div className="flex font-semibold items-center gap-3 my-2">
             <span className="flex items-center gap-1 text-gray-600">
               <CodeXml size={15} />
-              Front End Developer
+              React & Next.js Developer
             </span>
             <Link href="/projects/abunaserkayes.pdf" target="_blank">
               <span className="flex items-center text-gray-600">
@@ -47,19 +46,9 @@ export default function Hero() {
             Software Engineer & Programming Enthusiast
           </p>
           <div className="flex flex-wrap gap-2 my-3">
-            <div className="">
-              <Button
-                className="flex items-center justify-center bg-gray-200"
-                size="sm"
-                variant="pill"
-                href="#"
-              >
-                <MonitorSmartphone className="flex" size={17} /> Web Developer{" "}
-              </Button>
-            </div>
             <div>
               <Button
-                className="flex items-center justify-center  bg-gray-200"
+                className="flex items-center justify-center gap-2 bg-gray-200"
                 size="sm"
                 variant="pill"
                 href="#"
@@ -69,7 +58,7 @@ export default function Hero() {
             </div>
             <div>
               <Button
-                className="flex items-center justify-center  bg-gray-200"
+                className="flex items-center justify-center gap-2 bg-gray-200"
                 size="sm"
                 variant="pill"
                 href="#"

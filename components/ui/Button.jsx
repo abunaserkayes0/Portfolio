@@ -7,7 +7,7 @@ const buttonStyles = cva("button", {
       default: "bg-blue-500 text-white rounded hover:bg-blue-400",
       outline:
         "outline outline-1 outline-blue-500 rounded text-blue-500 hover:bg-blue-400 hover:text-white",
-      pill: "rounded-full outline-1 outline-blue-500 hover:bg-blue-100 hover:text-black hover:font-semibold hover:transition ease-in",
+      pill: "rounded-full outline-1 outline-blue-500 hover:bg-blue-100 hover:text-black hover:transition-all hover:duration-300 hover:ease-in-out",
       primary: "bg-blue-600 text-white",
       secondary: "bg-lime-600 text-white",
       tertiary: "bg-gray-600 text-white",
