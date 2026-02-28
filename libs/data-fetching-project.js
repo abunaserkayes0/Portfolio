@@ -1,20 +1,19 @@
+import { getStaticProjectsData, getStaticProjectById } from "@/data/projects";
+
 export const getProjectsData = async () => {
     try {
-        const projects = await fetch(`https://abunaserkayes.vercel.app/api/projects`)
-        const data = await projects.json();
-        return data;
+        return await getStaticProjectsData();
     } catch (error) {
-        console.log(error.message);
-
+        console.log("Error fetching projects:", error.message);
+        return [];
     }
-}
+};
 
 export const getProjectById = async (projectId) => {
     try {
-        const project = await fetch(`https://abunaserkayes.vercel.app/api/projects/${projectId}`)
-        const data = await project.json();
-        return data;
+        return await getStaticProjectById(projectId);
     } catch (error) {
-        console.log(error.message);
+        console.log("Error fetching project by ID:", error.message);
+        return null;
     }
-}
+};

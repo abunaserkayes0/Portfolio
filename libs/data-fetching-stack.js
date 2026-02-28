@@ -1,48 +1,30 @@
+import { getStaticStackData } from "@/data/stack";
+
 export const getStacksData = async () => {
     try {
-        const data = await fetch("https://abunaserkayes.vercel.app/api/stacks");
-        const stacks = await data.json();
-        return stacks;
+        return await getStaticStackData();
     } catch (error) {
-        console.log(error.message);
+        console.log("Error fetching stack data:", error.message);
+        return [];
     }
-}
+};
 
-export const getStacksByFronted = async () => {
-    try {
-        const types = await getStacksData();
-        const type = types?.filter((stack) => stack.type === "frontend");
-        return type;
-    } catch (error) {
-        console.log(error.message);
-    }
+export const getStacksByFrontend = async () => {
+    const stacks = await getStacksData();
+    return stacks?.filter((stack) => stack.type === "frontend") || [];
+};
 
-}
 export const getStacksByBackend = async () => {
-    try {
-        const types = await getStacksData();
-        const type = types?.filter((stack) => stack.type === "beckEnd");
-        return type;
-    } catch (error) {
-        console.log(error.message);
-    }
-}
-export const getStacksByTools = async () => {
-    try {
-        const types = await getStacksData();
-        const type = types?.filter((stack) => stack.type === "tools");
-        return type;
-    } catch (error) {
-        console.log(error.message);
-    }
-}
-export const getStacksByBrowser = async () => {
+    const stacks = await getStacksData();
+    return stacks?.filter((stack) => stack.type === "backend") || [];
+};
 
-    try {
-        const types = await getStacksData();
-        const type = types?.filter((stack) => stack.type === "browser");
-        return type;
-    } catch (error) {
-        console.log(error.message);
-    }
-}
+export const getStacksByTools = async () => {
+    const stacks = await getStacksData();
+    return stacks?.filter((stack) => stack.type === "tools") || [];
+};
+
+export const getStacksByBrowser = async () => {
+    const stacks = await getStacksData();
+    return stacks?.filter((stack) => stack.type === "browser") || [];
+};

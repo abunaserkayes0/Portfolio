@@ -36,13 +36,13 @@ const stackData = [
     }, {
         id: 6,
         title: "Node.js",
-        type: "beckEnd",
+        type: "backend",
         image: "/stacks/nodejs.webp"
     },
     {
         id: 7,
         title: "MongoDB",
-        type: "beckEnd",
+        type: "backend",
         image: "/stacks/mongodb.webp"
     }, {
         id: 8,

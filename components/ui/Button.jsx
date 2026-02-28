@@ -43,13 +43,19 @@ export default function Button({
   href,
   onClick,
 }) {
-  const buttonElement = (
-    <button
-      onClick={onClick}
-      className={buttonStyles({ variant, size, padding, className })}
-    >
+  const combinedClassName = buttonStyles({ variant, size, padding, className });
+
+  if (href) {
+    return (
+      <Link href={href} className={combinedClassName} onClick={onClick}>
+        {children}
+      </Link>
+    );
+  }
+
+  return (
+    <button onClick={onClick} className={combinedClassName}>
       {children}
     </button>
   );
-  return href ? <Link href={href}>{buttonElement}</Link> : buttonElement;
 }
