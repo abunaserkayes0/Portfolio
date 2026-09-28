@@ -1,6 +1,6 @@
 import { getCurrentYear } from "@/utils/getData";
-import Button from "./ui/Button";
-import ScrollToTop from "./ui/ScrollToTop";
+import Button from "./ui/button";
+import ScrollToTop from "./ui/scroll-to-top";
 
 export default function Footer() {
   return (

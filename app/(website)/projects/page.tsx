@@ -1,4 +1,4 @@
-import Card from "@/components/ui/Card";
+import Card from "@/components/ui/card";
 import { getProjectsData } from "@/libs/data-fetching-project";
 
 export default async function ProjectsPage() {

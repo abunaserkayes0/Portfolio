@@ -1,7 +1,7 @@
 import "../globals.css";
-import Footer from "@/components/Footer";
-import NavBar from "@/components/NavBar";
-import SmoothScroll from "@/components/ui/SmoothScroll";
+import Footer from "@/components/footer";
+import NavBar from "@/components/nav-bar";
+import SmoothScroll from "@/components/ui/smooth-scroll";
 
 export const metadata = {
   title: "Portfolio",

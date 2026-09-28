@@ -1,4 +1,4 @@
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/button";
 import { getProjectById } from "@/libs/data-fetching-project";
 import { FastForward, Github, Globe } from "lucide-react";
 import Image from "next/image";
@@ -11,7 +11,7 @@ export default async function page({ params }: { params: Promise<{ id: string }>
 
     return (
         <section className="flex flex-col items-center my-10">
-            <div className="border-8 border-gray-100 rounded-lg">
+            <div className="border-8 border-gray-100 rounded">
                 <Image src={project?.siteImage} alt={project?.title} width={850} height={600} />
             </div>
             <div className="p-10">

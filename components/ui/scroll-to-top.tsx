@@ -1,5 +1,5 @@
 "use client";
-import Button from "./Button";
+import Button from "./button";
 import { ArrowUp } from "lucide-react";
 
 export default function ScrollToTop() {

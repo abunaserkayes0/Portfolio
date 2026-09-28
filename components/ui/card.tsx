@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "./Button";
+import Button from "./button";
 import { File, Github, Globe } from "lucide-react";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ export default function Card({ project }: CardProps) {
   return (
     <>
       {project && (
-        <article className="w-full bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden group">
+        <article className="w-full bg-white border border-gray-100 rounded shadow-sm hover:shadow-md transition-shadow overflow-hidden group">
           <div className="relative h-48 sm:h-56 w-full overflow-hidden">
             <Image
               src={project?.siteImage}
@@ -26,7 +26,7 @@ export default function Card({ project }: CardProps) {
                 </h3>
               </Link>
               <Button
-                className="flex items-center font-bold gap-3 rounded-xl"
+                className="flex items-center font-bold gap-3 rounded"
                 href={`/projects/${project?.id}/`}
                 variant="default"
                 size="sm"

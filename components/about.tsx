@@ -6,7 +6,7 @@ import {
   Mail,
   Twitter,
 } from "lucide-react";
-import Button from "./ui/Button";
+import Button from "./ui/button";
 
 export default function About() {
   return (
@@ -24,42 +24,42 @@ export default function About() {
       </section>
       <section className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 py-6">
         <Button
-          className="font-semibold flex items-center justify-center rounded-xl gap-2 text-xs py-3"
+          className="font-semibold flex items-center justify-center rounded gap-2 text-xs py-3"
           href="https://www.facebook.com/k0yes"
           variant="primary"
         >
           <Facebook size={16} /> FACEBOOK
         </Button>
         <Button
-          className="font-semibold flex items-center justify-center rounded-xl gap-2 text-xs py-3"
+          className="font-semibold flex items-center justify-center rounded gap-2 text-xs py-3"
           href="https://github.com/abunaserkayes0"
           variant="secondary"
         >
           <Github size={16} /> GITHUB
         </Button>
         <Button
-          className="font-semibold flex items-center justify-center rounded-xl gap-2 text-xs py-3"
+          className="font-semibold flex items-center justify-center rounded gap-2 text-xs py-3"
           href="https://www.linkedin.com/in/abunaserkayes/"
           variant="tertiary"
         >
           <Linkedin size={16} /> LINKEDIN
         </Button>
         <Button
-          className="font-semibold flex items-center justify-center rounded-xl gap-2 text-xs py-3"
+          className="font-semibold flex items-center justify-center rounded gap-2 text-xs py-3"
           href="https://www.instagram.com/abunaserk0yes/"
           variant="senary"
         >
           <Instagram size={16} /> INSTAGRAM
         </Button>
         <Button
-          className="font-semibold flex items-center justify-center rounded-xl gap-2 text-xs py-3"
+          className="font-semibold flex items-center justify-center rounded gap-2 text-xs py-3"
           href="https://x.com/abunaserkayes"
           variant="quaternary"
         >
           <Twitter size={16} /> TWITTER
         </Button>
         <Button
-          className="font-semibold flex items-center justify-center rounded-xl gap-2 text-xs py-3"
+          className="font-semibold flex items-center justify-center rounded gap-2 text-xs py-3"
           href="mailto:infinitykayes@gmail.com"
           variant="quinary"
         >

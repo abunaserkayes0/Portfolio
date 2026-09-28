@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import Button from "./ui/Button";
+import Button from "./ui/button";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ export default function NavBar() {
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 -mr-2 focus:outline-none hover:bg-gray-100 rounded-lg transition-colors"
+            className="p-2 -mr-2 focus:outline-none hover:bg-gray-100 rounded transition-colors"
             aria-label="Toggle menu"
           >
             <svg
@@ -81,7 +81,7 @@ export default function NavBar() {
           <Button
             variant="outline"
             size="lg"
-            className="rounded-2xl flex items-center justify-center gap-2"
+            className="rounded flex items-center justify-center gap-2"
             href="https://www.linkedin.com/in/abunaserkayes/"
             onClick={() => setIsOpen(false)}
           >

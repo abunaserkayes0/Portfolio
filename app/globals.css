@@ -3,3 +3,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  @apply bg-gradient-to-br from-blue-100 via-white to-blue-200 text-gray-900;
+  min-height: 100vh;
+}

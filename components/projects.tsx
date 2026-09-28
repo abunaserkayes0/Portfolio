@@ -1,5 +1,5 @@
 import { getProjectsData } from "@/libs/data-fetching-project";
-import Card from "./ui/Card";
+import Card from "./ui/card";
 
 export default async function Projects() {
   const projects = await getProjectsData();

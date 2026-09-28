@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./ui/Button";
+import Button from "./ui/button";
 
 export default function Hero() {
   const container = useRef(null);
@@ -74,18 +74,20 @@ export default function Hero() {
         </div>
 
         <div className="hero-reveal flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 sm:gap-6 my-6">
-          <span className="flex items-center gap-2 text-gray-700 font-semibold px-4 py-2 bg-gray-50 rounded-lg">
+          <span className="flex items-center gap-2 text-gray-700 font-semibold px-4 py-2 rounded">
             <CodeXml size={18} className="text-blue-600" />
             React & Next.js Developer
           </span>
           <Link 
             href="/assets/abunaserkayes.pdf" 
             target="_blank"
-            className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors font-semibold group"
+            className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors font-semibold group relative"
           >
             <FileText size={18} />
-            <span>View Resume</span>
-            <div className="h-px w-0 group-hover:w-full bg-blue-600 transition-all duration-300" />
+            <span className="relative">
+              View Resume
+              <span className="absolute left-0 -bottom-1 h-px w-0 bg-blue-400 transition-all duration-300 group-hover:w-full" />
+            </span>
           </Link>
         </div>
 
