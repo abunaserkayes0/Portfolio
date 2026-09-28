@@ -73,7 +73,7 @@ export const getStaticProjectsData = async () => {
   return projects || [];
 };
 
-export const getStaticProjectById = async (id) => {
+export const getStaticProjectById = async (id: string) => {
   if (id) {
     const project = projects.find(
       (project) => String(project.id) === String(id)

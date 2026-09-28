@@ -44,10 +44,10 @@ export default function NavBar() {
           <Link href="/" className="text-sm hover:text-blue-600 transition-colors">
             Home
           </Link>
-          <Link href="/project" className="text-sm hover:text-blue-600 transition-colors">
+          <Link href="/#about" className="text-sm hover:text-blue-600 transition-colors">
             About
           </Link>
-          <Link href="/contact" className="text-sm hover:text-blue-600 transition-colors">
+          <Link href="mailto:infinitykayes@gmail.com" className="text-sm hover:text-blue-600 transition-colors">
             Contact
           </Link>
           <Button
@@ -72,10 +72,10 @@ export default function NavBar() {
           <Link href="/" onClick={() => setIsOpen(false)} className="text-lg hover:text-blue-600">
             Home
           </Link>
-          <Link href="/project" onClick={() => setIsOpen(false)} className="text-lg hover:text-blue-600">
+          <Link href="/#about" onClick={() => setIsOpen(false)} className="text-lg hover:text-blue-600">
             About
           </Link>
-          <Link href="/contact" onClick={() => setIsOpen(false)} className="text-lg hover:text-blue-600">
+          <Link href="mailto:infinitykayes@gmail.com" onClick={() => setIsOpen(false)} className="text-lg hover:text-blue-600">
             Contact
           </Link>
           <Button

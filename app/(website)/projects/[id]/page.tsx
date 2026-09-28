@@ -3,9 +3,11 @@ import { getProjectById } from "@/libs/data-fetching-project";
 import { FastForward, Github, Globe } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
-export default async function page({ params: { id } }) {
+import { notFound } from "next/navigation";
+export default async function page({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
     const project = await getProjectById(id);
+    if (!project) return notFound();
 
     return (
         <section className="flex flex-col items-center my-10">
@@ -27,10 +29,10 @@ export default async function page({ params: { id } }) {
                         <h4 className="font-semibold">1 min Read</h4>
                     </div>
                     <div className="flex flex-wrap items-center gap-2">
-                        <Link href={project?.sourceCode}>
+                        <Link href={project?.sourceCode} target="_blank" rel="noopener noreferrer">
                             <Github size={20} />
                         </Link>
-                        <Link href={project?.liveSite}>
+                        <Link href={project?.liveSite} target="_blank" rel="noopener noreferrer">
                             <Globe size={20} />
                         </Link>
                     </div>
@@ -41,7 +43,7 @@ export default async function page({ params: { id } }) {
                 <h2 className="text-xl font-normal mt-5">{project?.description}</h2>
                 <div>
                     <h5 className="font-semibold text-xl uppercase my-2">Features</h5>
-                    <p>=======</p>
+                    <hr className="my-4 border-gray-200" />
                     {project?.keyFeatures?.map((keyFeature, index) => {
                         return (
                             <div key={index}>

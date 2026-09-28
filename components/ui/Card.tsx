@@ -3,7 +3,9 @@ import Button from "./Button";
 import { File, Github, Globe } from "lucide-react";
 import Link from "next/link";
 
-export default function Card({ project }) {
+import { CardProps } from "@/types";
+
+export default function Card({ project }: CardProps) {
   return (
     <>
       {project && (
@@ -52,12 +54,12 @@ export default function Card({ project }) {
               </div>
               <div className="flex items-center gap-3">
                 {project?.sourceCode && (
-                  <Link href={project?.sourceCode} className="text-gray-400 hover:text-gray-900 transition-colors">
+                  <Link href={project?.sourceCode} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-900 transition-colors">
                     <Github size={18} />
                   </Link>
                 )}
                 {project?.liveSite && (
-                  <Link href={project?.liveSite} className="text-blue-500 hover:text-blue-600 transition-colors">
+                  <Link href={project?.liveSite} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 transition-colors">
                     <Globe size={18} />
                   </Link>
                 )}

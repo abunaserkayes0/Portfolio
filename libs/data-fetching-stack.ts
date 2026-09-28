@@ -3,7 +3,7 @@ import { getStaticStackData } from "@/data/stack";
 export const getStacksData = async () => {
     try {
         return await getStaticStackData();
-    } catch (error) {
+    } catch (error: any) {
         console.log("Error fetching stack data:", error.message);
         return [];
     }

@@ -34,6 +34,8 @@ const buttonStyles = cva("button", {
   },
 });
 
+import { ButtonProps } from "@/types";
+
 export default function Button({
   className,
   variant,
@@ -42,7 +44,7 @@ export default function Button({
   children,
   href,
   onClick,
-}) {
+}: ButtonProps) {
   const combinedClassName = buttonStyles({ variant, size, padding, className });
 
   if (href) {
