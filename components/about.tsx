@@ -27,52 +27,6 @@ export default function About() {
           modular code architecture, and seamless cross-platform user experiences.
         </p>
       </section>
-
-      {/* Quick Contact & Links */}
-      <section className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 py-6">
-        <Button
-          className="font-semibold flex items-center justify-center rounded gap-2 text-xs py-3"
-          href="https://github.com/abunaserkayes0"
-          variant="secondary"
-        >
-          <Github size={16} /> GITHUB
-        </Button>
-        <Button
-          className="font-semibold flex items-center justify-center rounded gap-2 text-xs py-3"
-          href="https://www.linkedin.com/in/abunaserkayes/"
-          variant="tertiary"
-        >
-          <Linkedin size={16} /> LINKEDIN
-        </Button>
-        <Button
-          className="font-semibold flex items-center justify-center rounded gap-2 text-xs py-3"
-          href="https://abunaserkayes.live"
-          variant="primary"
-        >
-          <Globe size={16} /> WEBSITE
-        </Button>
-        <Button
-          className="font-semibold flex items-center justify-center rounded gap-2 text-xs py-3"
-          href="mailto:infinitykayes@gmail.com"
-          variant="quinary"
-        >
-          <Mail size={16} /> GMAIL
-        </Button>
-        <Button
-          className="font-semibold flex items-center justify-center rounded gap-2 text-xs py-3"
-          href="tel:+8801744659976"
-          variant="senary"
-        >
-          <Phone size={16} /> CALL
-        </Button>
-        <Button
-          className="font-semibold flex items-center justify-center rounded gap-2 text-xs py-3"
-          href="https://www.facebook.com/k0yes"
-          variant="quaternary"
-        >
-          <Facebook size={16} /> FACEBOOK
-        </Button>
-      </section>
     </div>
   );
 }
