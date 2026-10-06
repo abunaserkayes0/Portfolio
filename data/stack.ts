@@ -28,7 +28,7 @@ const stackData: StackItem[] = [
     },
     {
         id: 2,
-        title: "JavaScript",
+        title: "JavaScript (ES6+)",
         category: "languages",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     },
@@ -48,15 +48,15 @@ const stackData: StackItem[] = [
     // Frontend
     {
         id: 5,
-        title: "React",
-        category: "frontend",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    },
-    {
-        id: 6,
         title: "Next.js",
         category: "frontend",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    },
+    {
+        id: 6,
+        title: "React.js",
+        category: "frontend",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
     {
         id: 7,
@@ -64,77 +64,132 @@ const stackData: StackItem[] = [
         category: "frontend",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     },
+    {
+        id: 8,
+        title: "Ant Design",
+        category: "frontend",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/antdesign/antdesign-original.svg",
+    },
+
+    {
+        id: 10,
+        title: "Axios",
+        category: "frontend",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/axios/axios-plain.svg",
+    },
 
     // State Management
     {
-        id: 8,
-        title: "Redux & RTK",
+        id: 11,
+        title: "Redux & Redux Toolkit",
         category: "state",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
     },
     {
-        id: 9,
+        id: 12,
+        title: "RTK Query",
+        category: "state",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+    },
+    {
+        id: 13,
         title: "TanStack Query",
         category: "state",
         icon: "https://raw.githubusercontent.com/TanStack/query/main/media/emblem-light.svg",
     },
+    {
+        id: 14,
+        title: "Redux-Persist",
+        category: "state",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+    },
 
     // Backend & Database
     {
-        id: 10,
+        id: 15,
         title: "Node.js",
         category: "backend",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     },
     {
-        id: 11,
-        title: "Express",
+        id: 16,
+        title: "Express.js",
         category: "backend",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
     },
     {
-        id: 12,
+        id: 17,
         title: "MongoDB",
         category: "backend",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     },
     {
-        id: 13,
+        id: 18,
         title: "Mongoose",
         category: "backend",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     },
+    {
+        id: 19,
+        title: "RESTful APIs",
+        category: "backend",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+    },
+    {
+        id: 20,
+        title: "JWT Authentication",
+        category: "backend",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg",
+    },
 
     // Tools & Workflow
     {
-        id: 14,
-        title: "Git",
+        id: 21,
+        title: "Git & GitHub",
         category: "tools",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     },
     {
-        id: 15,
+        id: 22,
         title: "GitHub Actions",
         category: "tools",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg",
     },
     {
-        id: 16,
+        id: 23,
         title: "VS Code",
         category: "tools",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
     },
     {
-        id: 17,
+        id: 24,
+        title: "Chrome DevTools",
+        category: "tools",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg",
+    },
+    {
+        id: 25,
         title: "Postman",
         category: "tools",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
     },
     {
-        id: 18,
+        id: 26,
         title: "Vercel",
         category: "tools",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+    },
+    {
+        id: 27,
+        title: "Netlify",
+        category: "tools",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg",
+    },
+    {
+        id: 28,
+        title: "Husky",
+        category: "tools",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     },
 ];
 

@@ -1,9 +1,9 @@
 const projects = [
   {
     id: "9oO5tt5j71wLJRnQc9kuTpZdgGT744HR",
-    title: "Follow HR",
+    title: "FollowHR – AI Recruitment & ATS Platform",
     description:
-      "An AI-powered recruitment platform designed to streamline hiring workflows, candidate sourcing, and talent acquisition for agencies and enterprises.",
+      "Enterprise recruitment platform designed to streamline hiring workflows, candidate screening pipelines, and recruiter dashboards with real-time analytics.",
     users: {
       name: "Abu Naser Kayes",
       photo: "/assets/profile.png",
@@ -13,23 +13,23 @@ const projects = [
     siteImage: "/projects/followhr.png",
     technology: [
       "Next.js",
-      "React",
-      "Tailwind CSS",
+      "React.js",
       "TypeScript",
+      "Tailwind CSS",
+      "RESTful APIs",
     ],
     keyFeatures: [
-      "AI recruitment engine offering candidate recommendations and intelligent matching.",
-      "Customizable applicant tracking pipeline with intuitive drag-and-drop workflow.",
-      "Multi-channel candidate sourcing across job boards, LinkedIn, and social media.",
-      "Real-time team collaboration hub with advanced recruitment analytics and reporting.",
-      "Modern, responsive interface built with Next.js and styled with Tailwind CSS.",
+      "Architected candidate screening workflows, interactive hiring pipelines, and recruiter dashboards using Next.js, TypeScript, and Tailwind CSS.",
+      "Engineered responsive UI components, candidate evaluation analytics, and RESTful API integrations to streamline enterprise recruitment operations.",
+      "Customizable applicant tracking pipeline with intuitive drag-and-drop workflow and candidate evaluation analytics.",
+      "Engineered robust frontend optimization with code splitting and server-side rendering (SSR) for high performance.",
     ],
   },
   {
     id: "9oO5tt5j71wLJRnQc9kuTpZdgGT733HR",
-    title: "Follow HR Jobs",
+    title: "FollowHR Jobs – Job Board & Candidate Portal",
     description:
-      "An AI-powered job portal designed to connect candidates with tailored career opportunities and provide real-time application tracking.",
+      "Fast, SEO-optimized public recruitment portal connecting candidates with tailored career opportunities featuring advanced job filtering and application flows.",
     users: {
       name: "Abu Naser Kayes",
       photo: "/assets/profile.png",
@@ -39,22 +39,23 @@ const projects = [
     siteImage: "/projects/followhrjobs.png",
     technology: [
       "Next.js",
-      "React",
-      "Tailwind CSS",
+      "React.js",
       "TypeScript",
+      "Redux Toolkit",
+      "Tailwind CSS",
     ],
     keyFeatures: [
-      "AI-driven job matching tailored to candidate skills and career goals.",
-      "Real-time application tracking system for transparent job searching.",
-      "Smart filters to navigate roles in development, design, marketing, and finance.",
-      "Modern, responsive UI built with Next.js and styled with Tailwind CSS.",
+      "Built fast, SEO-optimized public-facing recruitment portal with advanced job filtering, dynamic routing, and streamlined application flows.",
+      "Integrated centralized state management via Redux Toolkit and implemented accessible interactive components with smooth micro-animations.",
+      "Real-time application tracking system for transparent job searching and candidate profile management.",
+      "Fully responsive, accessible design adhering to mobile-first standards.",
     ],
   },
   {
     id: "9oO5tt5j71wLJRnQc9kuTpZdgGT755AD",
-    title: "Follow HR Super Admin",
+    title: "FollowHR Super Admin – Management Console",
     description:
-      "A centralized super administration dashboard panel to monitor and control recruitment operations, agency accounts, candidate pipelines, and platform metrics.",
+      "Centralized super administration dashboard to monitor and control recruitment operations, agency accounts, candidate pipelines, and platform metrics.",
     users: {
       name: "Abu Naser Kayes",
       photo: "/assets/profile.png",
@@ -64,16 +65,16 @@ const projects = [
     siteImage: "/projects/followhr-admin.png",
     technology: [
       "Next.js",
-      "React",
-      "Tailwind CSS",
+      "React.js",
       "TypeScript",
+      "Tailwind CSS",
+      "RESTful APIs",
     ],
     keyFeatures: [
       "Comprehensive administration console for managing organizations, agencies, and recruiters.",
       "Centralized management of job postings, applicant pipelines, and access privileges.",
       "Secure role-based authentication and operational permission controls.",
       "Real-time activity tracking, analytics dashboards, and system monitoring.",
-      "High-performance responsive dashboard built with Next.js and Tailwind CSS.",
     ],
   },
 ];
