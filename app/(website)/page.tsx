@@ -16,7 +16,7 @@ export default function Home() {
         </section>
       </AnimatedSection>
       
-      <hr className="my-8 border-gray-100" />
+      <hr className="my-8 border-gray-100 dark:border-gray-800" />
       
       <AnimatedSection animationType="scale">
         <section id="experience">
@@ -24,7 +24,7 @@ export default function Home() {
         </section>
       </AnimatedSection>
       
-      <hr className="my-8 border-gray-100" />
+      <hr className="my-8 border-gray-100 dark:border-gray-800" />
       
       <AnimatedSection animationType="scrubFadeUp">
         <section id="stack">

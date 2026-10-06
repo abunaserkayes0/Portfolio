@@ -19,7 +19,7 @@ export default function Hero() {
 
   useGSAP(() => {
     const tl = gsap.timeline();
-    
+
     // Initial fade in for hero elements
     tl.from('.hero-reveal', {
       y: 50,
@@ -43,12 +43,18 @@ export default function Hero() {
   }, { scope: container });
 
   return (
-    <section ref={container} className="flex flex-col md:flex-row items-center md:items-start md:gap-12 py-10 md:py-20">
+    <section ref={container} className="relative flex flex-col md:flex-row items-center md:items-start md:gap-12 py-10 md:py-20">
+      {/* Ambient background glow (same as abdullahmia-dev) */}
+      <div aria-hidden="true" className="pointer-events-none absolute -top-12 -right-8 overflow-hidden">
+        <div
+        />
+      </div>
+
       {/* Profile Image Container */}
       <div className="flex-shrink-0 mb-8 md:mb-0 hero-reveal">
         <div className="hero-image relative w-40 h-40 md:w-56 md:h-56">
           <Image
-            className="rounded-full border-4 md:border-8 border-blue-50 transition-transform hover:scale-105 duration-300 shadow-xl object-cover"
+            className="rounded-full border-4 md:border-8 border-blue-50 dark:border-blue-950/60 transition-transform hover:scale-105 duration-300 shadow-xl object-cover"
             src="/assets/profile.png"
             alt="profile"
             fill
@@ -59,29 +65,29 @@ export default function Hero() {
 
       {/* Hero Content */}
       <div className="w-full text-center md:text-left">
-        <h1 className="hero-reveal text-3xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-2">
+        <h1 className="hero-reveal text-3xl md:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-2">
           Abu Naser Kayes
         </h1>
-        
-        <div className="hero-reveal flex flex-col sm:flex-row font-medium items-center justify-center md:justify-start gap-2 sm:gap-4 my-4 text-gray-600">
-          <span className="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm">
+
+        <div className="hero-reveal flex flex-col sm:flex-row font-medium items-center justify-center md:justify-start gap-2 sm:gap-4 my-4 text-gray-600 dark:text-gray-400">
+          <span className="bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 border border-transparent dark:border-blue-800/40 px-3 py-1 rounded-full text-sm">
             @abunaserkayes
           </span>
           <span className="flex items-center gap-1.5 text-sm">
-            <MapPin size={16} className="text-blue-500" />
+            <MapPin size={16} className="text-blue-500 dark:text-blue-400" />
             Dhaka, Bangladesh
           </span>
         </div>
 
         <div className="hero-reveal flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 sm:gap-6 my-6">
-          <span className="flex items-center gap-2 text-gray-700 font-semibold px-4 py-2 rounded">
-            <CodeXml size={18} className="text-blue-600" />
+          <span className="flex items-center gap-2 text-gray-700 dark:text-gray-200 font-semibold px-4 py-2 rounded bg-white/60 dark:bg-gray-900/60 border border-gray-100 dark:border-gray-800 shadow-sm">
+            <CodeXml size={18} className="text-blue-600 dark:text-blue-400" />
             React & Next.js Developer
           </span>
-          <Link 
-            href="/assets/abunaserkayes.pdf" 
+          <Link
+            href="/assets/abunaserkayes.pdf"
             target="_blank"
-            className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors font-semibold group relative"
+            className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors font-semibold group relative"
           >
             <FileText size={18} />
             <span className="relative">
@@ -91,8 +97,8 @@ export default function Hero() {
           </Link>
         </div>
 
-        <p className="hero-reveal text-gray-600 text-base md:text-lg max-w-2xl mb-8 leading-relaxed mx-auto md:mx-0">
-          Dedicated Software Engineer specializing in building modern web architectures 
+        <p className="hero-reveal text-gray-600 dark:text-gray-300 text-base md:text-lg max-w-2xl mb-8 leading-relaxed mx-auto md:mx-0">
+          Dedicated Software Engineer specializing in building modern web architectures
           with a focus on performance and clean user experience.
         </p>
 
@@ -119,14 +125,14 @@ export default function Hero() {
         <div className="hero-reveal flex items-center justify-center md:justify-start gap-4">
           {[
             { icon: Facebook, href: "https://www.facebook.com/k0yes", color: "hover:bg-blue-600" },
-            { icon: Github, href: "https://github.com/abunaserkayes0", color: "hover:bg-gray-800" },
+            { icon: Github, href: "https://github.com/abunaserkayes0", color: "hover:bg-gray-800 dark:hover:bg-gray-700" },
             { icon: Linkedin, href: "https://www.linkedin.com/in/abunaserkayes/", color: "hover:bg-blue-700" }
           ].map((social, idx) => (
             <Link
               key={idx}
               href={social.href}
               target="_blank"
-              className={`p-2.5 bg-gray-100 rounded-full text-gray-700 hover:text-white transition-all duration-300 ${social.color}`}
+              className={`p-2.5 bg-gray-100 dark:bg-gray-800/80 rounded-full text-gray-700 dark:text-gray-300 hover:text-white transition-all duration-300 ${social.color}`}
             >
               <social.icon size={20} />
             </Link>

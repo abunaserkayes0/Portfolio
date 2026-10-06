@@ -12,8 +12,8 @@ export default function About() {
   return (
     <div className="my-10 mx-auto">
       <section>
-        <h1 className="text-2xl font-bold my-2 md:text-left">About Me</h1>
-        <p className="text-justify text-base sm:text-lg md:text-lg lg:text-lg">
+        <h1 className="text-2xl font-bold my-2 md:text-left text-gray-900 dark:text-white">About Me</h1>
+        <p className="text-justify text-base sm:text-lg md:text-lg lg:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
           A dedicated and passionate Frontend Web Developer with over a year of
           industry experience. Proficient in a comprehensive range of
           technologies including JavaScript, TypeScript, React, Next.js and

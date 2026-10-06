@@ -1,70 +1,28 @@
 const projects = [
   {
-    id: "9oO5tt5j71wLJRnQc9kuTpZdgGT722RS",
-    title: "Tourist Spot Management Application",
+    id: "9oO5tt5j71wLJRnQc9kuTpZdgGT744HR",
+    title: "Follow HR",
     description:
-      "A web Application build in MERN stack for managing tourist spots.",
+      "An AI-powered recruitment platform designed to streamline hiring workflows, candidate sourcing, and talent acquisition for agencies and enterprises.",
     users: {
       name: "Abu Naser Kayes",
       photo: "/assets/profile.png",
     },
-    liveSite: "https://havenfinders.netlify.app/",
-    sourceCode: "https://github.com/abunaserkayes0/havenfinders-client",
-    siteImage: "/projects/havenfinders.jpg",
-    technology: ["React", "Express Js", "MongoDB", "Tailwind CSS", "Daisy Ui"],
-    keyFeatures: [
-      "Built with React Js for optimized web performance.Utilizes Firebase for secure user authentication.Integrated with MongoDB as the database",
-      "Implement dynamic rendering of hotel listings and details.Incorporates best practices for data protection.",
-      "Designed for future scalability and the addition of new features.Includes user account management for booking history and preferences.Comprehensive reservation and availability checking functionality.",
-      "Additional feature of this application implement react-typewriter and react-toastifyUses Context-API and handles authentication.",
-    ],
-  },
-  {
-    id: "9oO5tt5j71wLJRnQc9kuTpZdgFT72235",
-    title: "Solution Daily needs",
-    description:
-      "A web Application build in MERN stack for managing daily needs items.In this application, you can order daily needs items and see the order list.",
-    users: {
-      name: "Abu Naser Kayes",
-      photo: "/assets/profile.png",
-    },
-    liveSite: "https://unique-solution-client.vercel.app/",
-    sourceCode: "https://github.com/abunaserkayes0/unique-solution-client",
-    siteImage: "/projects/unique-solution.jpg",
-    technology: ["React", "Express Js", "MongoDB", "Tailwind CSS", "Daisy Ui"],
-    keyFeatures: [
-      "Implement React Js for optimized web performance.Integrated with MongoDB as the database.",
-      "Implement dynamic rendering of service and details.Incorporates best practices for data protection.",
-      "Designed for future scalability and the addition of new features.Includes user account management for booking history and preferences.Comprehensive reservation and availability checking functionality.",
-      "Additional feature of this application implement react-toastify and using animaition.css",
-    ],
-  },
-  {
-    id: "9oO5tt5j71wLJRnQc9kuTpZdgGT7hu76",
-    title: "FoodVillage Restaurant",
-    description:
-      "A web Application build in MERN stack for managing food items.In this application, you can order food items and see the order list.",
-    users: {
-      name: "Abu Naser Kayes",
-      photo: "/assets/profile.png",
-    },
-    liveSite: "https://foodofvillage.netlify.app/",
-    sourceCode: "https://github.com/abunaserkayes0/havenfinders-client",
-    siteImage: "/projects/foodvillage.jpg",
+    liveSite: "https://followhr.com/",
+    sourceCode: "",
+    siteImage: "/projects/followhr.png",
     technology: [
+      "Next.js",
       "React",
-      "Express Js",
-      "MongoDB",
       "Tailwind CSS",
-      "Daisy Ui",
-      "JWT",
+      "TypeScript",
     ],
     keyFeatures: [
-      "Built with React Js for optimized web performance.Utilizes Firebase for secure user authentication.Integrated with MongoDB as the database.",
-      "Implement backend with express js and MongoDB for storing data.",
-      "Following Atomic structured for using code pattern and Slider use Swiper.js.",
-      "Additional feature of this application implement react-toastify and using animaition.css.",  
-      "Uses Context-API and handles authentication.",
+      "AI recruitment engine offering candidate recommendations and intelligent matching.",
+      "Customizable applicant tracking pipeline with intuitive drag-and-drop workflow.",
+      "Multi-channel candidate sourcing across job boards, LinkedIn, and social media.",
+      "Real-time team collaboration hub with advanced recruitment analytics and reporting.",
+      "Modern, responsive interface built with Next.js and styled with Tailwind CSS.",
     ],
   },
   {
@@ -90,6 +48,32 @@ const projects = [
       "Real-time application tracking system for transparent job searching.",
       "Smart filters to navigate roles in development, design, marketing, and finance.",
       "Modern, responsive UI built with Next.js and styled with Tailwind CSS.",
+    ],
+  },
+  {
+    id: "9oO5tt5j71wLJRnQc9kuTpZdgGT755AD",
+    title: "Follow HR Super Admin",
+    description:
+      "A centralized super administration dashboard panel to monitor and control recruitment operations, agency accounts, candidate pipelines, and platform metrics.",
+    users: {
+      name: "Abu Naser Kayes",
+      photo: "/assets/profile.png",
+    },
+    liveSite: "https://admin.followhr.com/",
+    sourceCode: "",
+    siteImage: "/projects/followhr-admin.png",
+    technology: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+    ],
+    keyFeatures: [
+      "Comprehensive administration console for managing organizations, agencies, and recruiters.",
+      "Centralized management of job postings, applicant pipelines, and access privileges.",
+      "Secure role-based authentication and operational permission controls.",
+      "Real-time activity tracking, analytics dashboards, and system monitoring.",
+      "High-performance responsive dashboard built with Next.js and Tailwind CSS.",
     ],
   },
 ];

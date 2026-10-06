@@ -1,77 +1,55 @@
-import {
-  getStacksByBackend,
-  getStacksByBrowser,
-  getStacksByFrontend,
-  getStacksByTools,
-} from "@/libs/data-fetching-stack";
+import { getStackGroups } from "@/libs/data-fetching-stack";
 import Image from "next/image";
 
 export default async function Stack() {
-  const frontEnds = await getStacksByFrontend();
-  const backends = await getStacksByBackend();
-  const tools = await getStacksByTools();
-  const browsers = await getStacksByBrowser();
+  const groups = await getStackGroups();
 
   return (
-    <>
-      <h1 className="text-2xl font-bold my-3">Tech Stacks</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-6 mt-6">
-        <section className="bg-gray-50/50 p-6 rounded border border-gray-100 hover:border-blue-100 transition-colors">
-          <h2 className="text-lg font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4">Frontend Skills</h2>
-          <div className="space-y-4">
-            {frontEnds?.map((frontEnd) => (
-              <div key={frontEnd.id} className="flex items-center gap-4 group">
-                <div className="w-10 h-10 flex items-center justify-center bg-white rounded shadow-sm border border-gray-100 group-hover:scale-110 transition-transform">
-                  <Image src={frontEnd.image} width={24} height={24} alt={frontEnd.title} className="object-contain" />
-                </div>
-                <h3 className="font-semibold text-gray-700">{frontEnd.title}</h3>
-              </div>
-            ))}
-          </div>
-        </section>
+    <section id="tech-stack" className="my-14">
+      <h2 className="text-xs sm:text-sm font-bold tracking-widest uppercase text-gray-500 dark:text-gray-400 mb-8">
+        TECH STACK
+      </h2>
 
-        <section className="bg-gray-50/50 p-6 rounded border border-gray-100 hover:border-blue-100 transition-colors">
-          <h2 className="text-lg font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4">Familiar Skills</h2>
-          <div className="space-y-4">
-            {backends?.map((backend) => (
-              <div key={backend.id} className="flex items-center gap-4 group">
-                <div className="w-10 h-10 flex items-center justify-center bg-white rounded shadow-sm border border-gray-100 group-hover:scale-110 transition-transform">
-                  <Image src={backend.image} width={24} height={24} alt={backend.title} className="object-contain" />
-                </div>
-                <h3 className="font-semibold text-gray-700">{backend.title}</h3>
-              </div>
-            ))}
-          </div>
-        </section>
+      <div className="space-y-6 sm:space-y-7">
+        {groups.map((group) => (
+          <div
+            key={group.category}
+            className="flex flex-col sm:flex-row sm:items-center gap-y-3 gap-x-8"
+          >
+            {/* Category Label */}
+            <span className="text-sm font-medium text-gray-500 dark:text-gray-400 w-36 shrink-0">
+              {group.label}
+            </span>
 
-        <section className="bg-gray-50/50 p-6 rounded border border-gray-100 hover:border-blue-100 transition-colors">
-          <h2 className="text-lg font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4">Tools</h2>
-          <div className="space-y-4">
-            {tools?.map((tool) => (
-              <div key={tool.id} className="flex items-center gap-4 group">
-                <div className="w-10 h-10 flex items-center justify-center bg-white rounded shadow-sm border border-gray-100 group-hover:scale-110 transition-transform">
-                  <Image src={tool.image} width={24} height={24} alt={tool.title} className="object-contain" />
+            {/* Badges / Pills */}
+            <div className="flex flex-wrap items-center gap-2.5">
+              {group.items.map((item) => (
+                <div
+                  key={item.id}
+                  className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full
+                             bg-white/70 dark:bg-[#1a1f29]/90
+                             border border-gray-200/90 dark:border-slate-800
+                             shadow-xs hover:border-gray-400 dark:hover:border-slate-600
+                             hover:scale-[1.02] active:scale-[0.98]
+                             transition-all duration-150 cursor-default group"
+                >
+                  <Image
+                    src={item.icon}
+                    width={18}
+                    height={18}
+                    alt={item.title}
+                    className="w-4.5 h-4.5 object-contain shrink-0 group-hover:scale-110 transition-transform duration-200"
+                    unoptimized
+                  />
+                  <span className="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200 whitespace-nowrap">
+                    {item.title}
+                  </span>
                 </div>
-                <h3 className="font-semibold text-gray-700">{tool.title}</h3>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </section>
-
-        <section className="bg-gray-50/50 p-6 rounded border border-gray-100 hover:border-blue-100 transition-colors">
-          <h2 className="text-lg font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4">Browsers</h2>
-          <div className="space-y-4">
-            {browsers?.map((browser) => (
-              <div key={browser.id} className="flex items-center gap-4 group">
-                <div className="w-10 h-10 flex items-center justify-center bg-white rounded shadow-sm border border-gray-100 group-hover:scale-110 transition-transform">
-                  <Image src={browser.image} width={24} height={24} alt={browser.title} className="object-contain" />
-                </div>
-                <h3 className="font-semibold text-gray-700">{browser.title}</h3>
-              </div>
-            ))}
-          </div>
-        </section>
+        ))}
       </div>
-    </>
+    </section>
   );
 }
