@@ -1,12 +1,50 @@
+import type { Metadata } from "next";
 import "../globals.css";
 import Footer from "@/components/footer";
 import NavBar from "@/components/nav-bar";
 import SmoothScroll from "@/components/ui/smooth-scroll";
 import { ThemeProvider } from "@/components/theme-provider";
 
-export const metadata = {
-  title: "Portfolio",
-  description: "Portfolio description for portfolio page",
+export const metadata: Metadata = {
+  title: "Abu Naser Kayes (ank.) — Frontend Developer",
+  description:
+    "Personal portfolio of Abu Naser Kayes (ank.) — Frontend Web Developer specializing in React.js, Next.js, TypeScript, and modern web architectures. Building performant, accessible digital experiences.",
+  keywords: [
+    "Abu Naser Kayes",
+    "ank.",
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "TypeScript",
+    "Web Developer Bangladesh",
+    "Portfolio",
+  ],
+  authors: [{ name: "Abu Naser Kayes", url: "https://kayes.iam.bd/" }],
+  creator: "Abu Naser Kayes",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    shortcut: "/favicon.svg",
+    apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "Abu Naser Kayes (ank.) — Frontend Developer",
+    description:
+      "Frontend Web Developer specializing in React.js, Next.js, TypeScript, and modern web architectures.",
+    url: "https://kayes.iam.bd/",
+    siteName: "Abu Naser Kayes Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Abu Naser Kayes (ank.) — Frontend Developer",
+    description:
+      "Frontend Web Developer specializing in React.js, Next.js, TypeScript, and modern web architectures.",
+    creator: "@abunaserkayes",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

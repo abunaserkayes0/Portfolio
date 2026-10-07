@@ -14,11 +14,11 @@ export default function Experience() {
         {experiences.map((exp) => (
           <div
             key={exp.id}
-            className="p-6 rounded-2xl bg-white/70 dark:bg-[#1a1b1e]/70 border border-gray-100 dark:border-gray-800/80 shadow-sm hover:shadow-md transition-all duration-300 backdrop-blur-sm"
+            className="p-6 rounded bg-white/70 dark:bg-[#1a1b1e]/70 border border-gray-100 dark:border-gray-800/80 shadow-sm hover:shadow-md transition-all duration-300 backdrop-blur-sm"
           >
             <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
               <div className="flex items-center sm:items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 flex items-center justify-center p-2 shrink-0 shadow-xs">
+                <div className="w-12 h-12 rounded bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 flex items-center justify-center p-2 shrink-0 shadow-xs">
                   <Image
                     src={exp.logo}
                     width={44}

@@ -11,7 +11,7 @@ export default async function page({ params }: { params: Promise<{ id: string }>
 
     return (
         <section className="flex flex-col items-center my-10 max-w-4xl mx-auto px-4">
-            <div className="border-8 border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden shadow-lg bg-gray-100 dark:bg-gray-800">
+            <div className="border-8 border-gray-100 dark:border-gray-800 rounded overflow-hidden shadow-lg bg-gray-100 dark:bg-gray-800">
                 <Image src={project?.siteImage} alt={project?.title} width={850} height={600} priority />
             </div>
             <div className="w-full py-8 md:py-10">

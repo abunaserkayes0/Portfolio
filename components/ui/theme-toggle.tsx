@@ -129,7 +129,7 @@ export default function ThemeToggle({ className = "" }: { className?: string }) 
     <button
       type="button"
       onClick={handleToggle}
-      className={`w-8 h-8 flex items-center justify-center rounded-lg text-[#94a3b8] hover:text-[#0f172a] dark:hover:text-white transition-colors duration-150 cursor-pointer overflow-hidden ${className}`}
+      className={`w-8 h-8 flex items-center justify-center rounded text-[#94a3b8] hover:text-[#0f172a] dark:hover:text-white transition-colors duration-150 cursor-pointer overflow-hidden ${className}`}
       aria-label="Toggle theme"
     >
       <AnimatePresence mode="wait" initial={false}>

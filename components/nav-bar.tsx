@@ -14,8 +14,13 @@ export default function NavBar() {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="font-bold text-xl tracking-tighter text-gray-900 dark:text-white">
-          Abu<span className="text-blue-600 dark:text-blue-400">Naser</span>Kayes
+        <Link
+          href="/"
+          className="group flex items-center gap-2.5 font-bold tracking-tight text-gray-900 dark:text-white transition-opacity hover:opacity-90"
+        >
+          <span className="font-extrabold text-xl tracking-tight">
+            ank<span className="text-blue-600 dark:text-blue-400">.</span>
+          </span>
         </Link>
         
         {/* Mobile Controls (Theme Toggle + Hamburger) */}

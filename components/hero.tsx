@@ -73,24 +73,21 @@ export default function Hero() {
       {/* Hero Content */}
       <div className="w-full text-left">
         <div className="hero-reveal flex flex-wrap items-center gap-4 sm:gap-6 my-4">
-          <span className="flex items-center gap-2 text-gray-700 dark:text-gray-200 font-semibold px-4 py-2 rounded-lg bg-white/60 dark:bg-gray-900/60 border border-gray-200/80 dark:border-gray-800 shadow-sm text-sm sm:text-base">
+          <span className="flex items-center gap-2 text-gray-700 dark:text-gray-200 font-semibold text-sm sm:text-base">
             <CodeXml size={18} className="text-blue-600 dark:text-blue-400" />
             React.js &amp; Next.js Developer
           </span>
           <Link
             href="/assets/abunaserkayes.pdf"
             target="_blank"
-            className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors font-semibold group relative text-sm sm:text-base"
+            className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors font-semibold text-sm sm:text-base"
           >
             <FileText size={18} />
-            <span className="relative">
-              View Resume
-              <span className="absolute left-0 -bottom-1 h-px w-0 bg-blue-400 transition-all duration-300 group-hover:w-full" />
-            </span>
+            <span>View Resume</span>
           </Link>
         </div>
 
-        <p className="hero-reveal text-gray-600 dark:text-gray-300 text-base md:text-lg max-w-2xl mb-6 leading-relaxed">
+        <p className="hero-reveal text-justify text-gray-600 dark:text-gray-300 text-base md:text-lg max-w-2xl mb-6 leading-relaxed">
           Frontend Developer at <span className="font-semibold text-gray-900 dark:text-white">SkillersZone LLC</span> specializing in building scalable, production-grade web applications with <span className="text-blue-600 dark:text-blue-400 font-medium">TypeScript</span>, <span className="text-blue-600 dark:text-blue-400 font-medium">Next.js</span>, <span className="text-blue-600 dark:text-blue-400 font-medium">React.js</span>, and modern architectures.
         </p>
 
